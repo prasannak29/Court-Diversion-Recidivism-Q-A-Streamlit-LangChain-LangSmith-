@@ -60,8 +60,7 @@ cp .env.example .env
 # (optional) LANGSMITH_PROJECT=court-diversion-app
 # REVIEWS_CHROMA_PATH=...
 ```
-3) **VectorDB** Creation
-Builds the Chroma vector DB from a CSV dataset of court diversion records.
+3) **VectorDB** Build the Chroma vector DB from a CSV dataset of court diversion records.
 
 Usage:
 ~~~bash
