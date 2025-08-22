@@ -1,0 +1,18 @@
+# Core app
+streamlit
+langchain
+langchain-openai
+langchain-community
+langsmith
+
+# Vector store
+chromadb
+
+# Utilities
+python-dotenv
+tiktoken
+
+# Optional: local metrics
+pandas
+numpy
+matplotlib
