@@ -35,6 +35,7 @@ A GitHub‑ready starter that turns your existing Chroma vector index of diversi
    ├─ metrics.py
    ├─ vectorstore.py
    └─ chains.py
+   └─ ingest.py
 ```
 
 ## 🚀 Quickstart
@@ -42,8 +43,8 @@ A GitHub‑ready starter that turns your existing Chroma vector index of diversi
 1) **Clone** and install deps
 
 ```bash
-git clone https://github.com/<you>/court-diversion-recividism-app
-cd court-diversion-recividism-app
+git clone https://github.com/prasannak29/Court-Diversion-Recidivism-Q-A-Streamlit-LangChain-LangSmith-
+cd Court-Diversion-Recidivism-Q-A-Streamlit-LangChain-LangSmith-
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -59,8 +60,15 @@ cp .env.example .env
 # (optional) LANGSMITH_PROJECT=court-diversion-app
 # REVIEWS_CHROMA_PATH=...
 ```
+3) **VectorDB** Creation
+Builds the Chroma vector DB from a CSV dataset of court diversion records.
 
-3) **Run**
+Usage:
+~~~bash
+    python src/ingest.py --csv data/diversion-demo.csv --persist chroma_data/ALM
+~~~
+
+4) **Run**
 
 ```bash
 streamlit run app.py
